@@ -3,14 +3,29 @@
 </head>
 
 <body>
+
 <div class="container">
-  {{> header}}
-  {{> about}}
+	{{> slider}}
+	{{> header}}
+	<div class="row-fluid">
+	</div>
 </div>
 </body>
 
-<template name="header">
 
+<template name="slider">
+	<div class="slider">
+		<div class="row-fluid">
+			<ul>
+				<li style="background-image: url('GT Bees Logo white.png'); background-size=100%; width=25%;"><p>What's going on?</p></li>
+			</ul>
+		</div>
+	</div>
+</template>
+
+
+
+<template name="header">
 	<div class="row-fluid">
 		<div class="logo span2">
 			<img src="GT Bees Logo white.png" />
@@ -25,15 +40,35 @@
 		</ul>
 		</div>
 	</div>
-
 </template>
 
+
+
 <template name="about">
-	<div class="row-fluid">
-		<div class="span2">
-		</div>
-		<div class="span10">
 			<img class ="aboutimg" src="CitySkyline.png" />
+</template>
+
+
+
+<template name="accordian">
+	<div class="tabbable tabs-right right-pane">
+		<ul class="nav nav-tabs">
+			<li><a href="#who" data-toggle="tab">Who</a></li>
+			<li><a href="#what" data-toggle="tab">What</a></li>
+			<li><a href="#where" data-toggle="tab">Where</a></li>
+			<li><a href="#when" data-toggle="tab">When</a></li>
+			<li><a href="#why" data-toggle="tab">Why</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane" id="who">
+			</div>
+			<div class="tab-pane" id="what">
+			</div>
+			<div class="tab-pane" id="where">
+			</div>
+			<div class="tab-pane" id="when">
+			</div>
+			<div class="tab-pane" id="why">
+			</div>
 		</div>
-	</div>
 </template>

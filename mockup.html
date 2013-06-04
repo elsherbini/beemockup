@@ -1,0 +1,39 @@
+<head>
+  <title>mockup</title>
+</head>
+
+<body>
+<div class="container">
+  {{> header}}
+  {{> about}}
+</div>
+</body>
+
+<template name="header">
+
+	<div class="row-fluid">
+		<div class="logo span2">
+			<img src="GT Bees Logo white.png" />
+		</div>
+		<div class="topbar span10">
+			<ul class="nav nav-tabs">
+				<li><a href="#">Blog</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Live Data</a></li>
+				<li><a href="#">Photo Stream</a></li>
+				<li><a href="#">Webcam Feed</a></li>
+		</ul>
+		</div>
+	</div>
+
+</template>
+
+<template name="about">
+	<div class="row-fluid">
+		<div class="span2">
+		</div>
+		<div class="span10">
+			<img class ="aboutimg" src="CitySkyline.png" />
+		</div>
+	</div>
+</template>
